@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="styles/muxu.css">
+<script src="scripts/cordova.js"></script>
+<script src="scripts/jquery-2.2.3.min.js"></script>
+<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page" data-theme="b" id="index">
+		<div data-role="header" data-theme="d" data-position="fixed" class="header">
+			<h1 style="font-size:2em;">苜蓿天气</h1>
+		</div>
+		<div data-role="content" > 
+      <div id="img" class="display">
+      <img src=""  />
+      </div>
+      <div  id="cityname" style="font-size:1.4em;" data-theme="d" class="display">      
+      </div>
+      <div  id="temp" style="font-size:1.4em;" data-theme="d" class="display">     
+      </div>
+      <div  id="status" style="font-size:1.6em;" data-theme="d" class="display">     
+      </div>
+      
+		</div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+           <ul>
+             <li> <a href="#index3" data-role="button" data-icon="search" data-theme="d" >搜索</a></li>
+             <li> <a href="#" data-role="button" data-icon="navigation" data-theme="d" id="gps">定位</a></li>
+             
+           </ul>
+        </div>
+    </div>
+	</div>
+  
+  <div data-role="page" data-theme="b" id="index2">
+		<div data-role="header" data-theme="d"  data-position="fixed" class="header">
+			<h1 style="font-size:2em;">苜蓿天气</h1>
+		</div>
+		<div data-role="content"> 
+		<ul data-role="listview" data-inset="true" class="moreinfo">
+         <li><a href="#" data-role="button" id="winddir"></a></li>
+         <li><a href="#" data-role="button" id="windgrade"></a></li>
+         <li><a href="#" data-role="button" id="min"></a></li>
+         <li><a href="#" data-role="button" id="max"></a></li>
+         <li><a href="#" data-role="button" id="qual"></a></li>
+      </ul>
+      </div> 
+      <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+         <ul>
+            <li><a href="#index" data-icon="home" data-role="button"  data-theme="d" class="back">主页</a></li>
+            <li><a href="#" data-icon="info" data-role="button"  data-theme="d" id="info">信息</a></li>
+         </ul>
+      </div>      
+      </div>      
+	</div>
+   
+  <div data-role="page" data-theme="b" id="index3">
+    <div data-role="header" data-theme="d"  data-position="fixed" class="header">
+			<h1 style="font-size:2em;">苜蓿天气</h1>
+		</div>
+   	<div data-role="content" >
+    <form>
+    
+    <div data-role="fieldcontain">
+        <div class="ui-grid-a">
+             <div class="ui-block-a"><input type="search" name="search" id="search" value=""></div>
+             <div class="ui-block-b"><label  for="search" style="font-size:1.4em;">搜索城市</label></div>
+        </div>
+              
+    </div> 
+    </form>
+      
+      <div id="img2" class="display">
+      <img src=""  />
+      </div>
+      <div  id="cityname2" style="font-size:1.4em;" data-theme="d" class="display">      
+      </div>
+      <div  id="temp2" style="font-size:1.4em;" data-theme="d" class="display">     
+      </div>
+      <div  id="status2" style="font-size:1.6em;" data-theme="d" class="display">     
+      </div>
+     
+		</div>
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+         <ul>
+            <li><a href="#index" data-icon="home" data-role="button"  data-theme="d" class="back">主页</a></li>
+            <li><a href="#index4" data-icon="forward" data-role="button"  data-theme="d" >详情</a></li>
+         </ul>
+      </div>      
+      </div>     
+  </div>
+  
+   <div data-role="page" data-theme="b" id="index4">
+    <div data-role="header" data-theme="d"  data-position="fixed" class="header">
+			<h1 style="font-size:2em;">苜蓿天气</h1>
+		</div>
+   	<div data-role="content" > 
+      <ul data-role="listview" data-inset="true" class="moreinfo">
+         <li><a href="#" data-role="button" id="winddir2"></a></li>
+         <li><a href="#" data-role="button" id="windgrade2"></a></li>
+         <li><a href="#" data-role="button" id="min2"></a></li>
+         <li><a href="#" data-role="button" id="max2"></a></li>
+         <li><a href="#" data-role="button" id="qual2"></a></li>
+      </ul>
+		</div>
+    <div data-role="footer" data-position="fixed">
+      <div data-role="navbar">
+         <ul>
+            <li><a href="#index" data-icon="home" data-role="button"  data-theme="d" class="back">主页</a></li>
+            <li><a href="#index3" data-icon="search" data-role="button"  data-theme="d" id="info">搜索</a></li>
+         </ul>
+      </div>      
+      </div>     
+  </div>
+  
+ 
+  <script src="scripts/event.js"></script>
+
+</body>
+</html>

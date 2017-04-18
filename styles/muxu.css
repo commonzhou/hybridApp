@@ -1,0 +1,51 @@
+/* CSS Document */
+html{
+    
+}
+h1{
+	color: #00FF00;
+}
+div.header{
+   border-bottom:#000;
+}
+ul.moreinfo{
+   text-align:center;
+}
+div.display{
+  color:#00FF00;
+ 	height: 60px;
+	width: 90%;
+  line-height: 30px;
+  cursor: pointer;
+  text-align:center;
+  margin:0 auto;
+ 
+  
+}
+div#cityname,div#cityname2{
+   margin-top:50px;
+	  
+}
+div#temp{
+ 
+}
+div#status{
+   
+}
+div#img,div#img2{
+  color:#00FF00;
+ 	height: 60px;
+	width: 90%;
+  line-height: 60px;
+  cursor: pointer;
+  text-align:center;
+  margin:0 auto;
+}
+div.ui-block-a{
+   padding:9px 0 5% 20px;
+   
+}
+div.ui-block-b{
+  padding:0 0 5% 8%;
+  line-height: 30px;
+}
